@@ -69,7 +69,7 @@ RC(6,0)  RC(6,1) RC(6,2)                 RC(6,5)                 RC(6,8)  RC(6,9
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
        row-gpios
-            = <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&gpio0 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio1 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio0 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio0 30  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
@@ -80,7 +80,7 @@ RC(6,0)  RC(6,1) RC(6,2)                 RC(6,5)                 RC(6,8)  RC(6,9
         col-gpios
             = <&gpio1 13  GPIO_ACTIVE_HIGH>
             , <&gpio0 28  GPIO_ACTIVE_HIGH>
-            , <&gpio0 25  GPIO_ACTIVE_HIGH>
+            , <&gpio0 3  GPIO_ACTIVE_HIGH>
             , <&gpio1 10 GPIO_ACTIVE_HIGH>
             , <&gpio1 11 GPIO_ACTIVE_HIGH>
             , <&gpio0 26 GPIO_ACTIVE_HIGH>
