@@ -60,7 +60,7 @@
 //        |         aA     |         0           |           SPACE              |         SYM         |        aA          |       
 //        -----------------------------------------------------------------------------------------------------------------
 
-                 &mkp LCLK                                                                                             &mkp RCLK
+/*                 &mkp LCLK                                                                                             &mkp RCLK
     &kp CLCK                &kp LGUI                            &mkp LCLK                          &mt ESC K_BACK                    &kp TAB
     &bhm HASH Q  &bhm N1 W  &bhm N2 E  &bhm N3 R  &bhm LPAR T   &bhm RPAR Y        &bhm UNDER U    &bhm MINUS I        &bhm PLUS O   &bhm AT P
     &bhm STAR A  &bhm N4 S  &bhm N5 D  &bhm N6 F  &bhm SLASH G  &bhm COLON H       &bhm SEMI J     &bhm APOS K         &bhm DQT L    &kp BSPC
@@ -90,7 +90,37 @@
     &none        &kp UP     &none       &sys_reset &ext_power EP_TOG &none         &kp LT           &kp GT          &kp PIPE         &kp KP_EQUAL
     &kp LEFT     &kp DOWN   &kp RIGHT   &none      &kp BSLH          &kp AMPS      &kp LBRC         &kp RBRC        &kp CARET        &kp BSPC
     &kp LSHFT    &none      &none       &none      &bl BL_DEC        &bl BL_TOG    &bl BL_INC       &none           &bootloader      &kp ENTER
-    &kp LCTRL               &kp LALT                                 &hm OUT_TOG SPACE              &tog SYM                         &tog UPPER
+    &kp LCTRL               &kp LALT                                 &hm OUT_TOG SPACE              &tog SYM                         &tog UPPER */
+//---------------------------------------------------------------------------------------------------------
+// |  ←  | ↑   | ↓   | →   |  Mleft  |  Mright |  Trackpad    |  Y  |  B  |  X  |  A  |                                       
+// |  ESC   |  SELECT  | Start |                 voive  |   [  |  ]  |   /  |  -  |  =  |  \  |
+// |   ~   |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  Backspace  |
+// |   TAB   |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  | 
+// |    '      |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |     ENTER   |  
+// |  LShift  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  <  |  >  |  ;  |  RShift  |  
+//        |  Fn  |  LCtrl  |  Alt   |      SPACE      |   Alt   |  RCtrl   |  Fn   |  
+//        -----------------------------------------------------------------------------------------------------------------
+&kp UP    &mkp LCLK   &kp  Y  &kp X  &kp  LEFT  &kp RIGHT  &kp DOWN                  &mkp RCLK       &kp  B         &kp A
+&kp ESC    &kp K_SELECT  &kp C_PLAY &kp C_BASS_BOOST    &kp LBKT   &kp RBKT   &kp FSLH   &kp MINUS  &kp  KP_EQUAL &kp BACKSLASH                                                                                  
+&kp TILDE2  &kp N1        &kp N2     &kp N3   &kp N4     &kp N5     &kp N6     &kp N7     &kp N8    &kp N9  &kp N0 &kp BSPC
+&kp TAB     &kp Q         &kp W      &kp E    &kp R      &kp T      &kp Y      &kp U      &kp I     &kp O   &kp P
+&kp SQT     &kp A         &kp S      &kp D    &kp F      &kp G      &kp H      &kp J      &kp K     &kp L   &kp SEMICOLON &kp ENTER        
+&kp LSHFT   &kp Z         &kp X      &kp C    &kp V      &kp B      &kp N      &kp M      &kp COMMA &kp DOT &kp RSHFT
+   &tog SYM   &kp LCTRL               &kp LALT              &kp SPACE           &tog SYM         &tog UPPER     &kp UPPER       
+            >;
+        };
+
+
+        sym_layer {
+
+            bindings = <
+&kp  UP     &kp RIGHT      &mkp LCLK     &kp LEFT   &kp RIGHT  &mkp RCLK  &kp X      &kp Y      &kp B     &kp A
+&kp K_LOCK  &kp C_AC_PRINT &mkp C_PAUSE  &kp K_MUTE &none   &none   &none   &kp F11    &kp F12   &none                                                                                   
+&none    &kp F1         &kp F2        &kp F3     &kp F4     &kp F5     &kp F6     &kp F7     &kp F8    &kp F9  &kp F10 &kp DEL
+&none    &kp Q          &kp W         &kp E      &kp R      &kp T      &kp Y      &kp U      &kp I     &kp O   &kp P
+&none    &kp A          &kp S         &kp D      &kp F      &kp G      &kp H      &kp J      &kp K     &kp L   &kp &kp         
+&none    &kp Z          &kp X         &kp C      &kp V      &kp B      &kp N      &kp M      &kp COMMA &kp DOT &kp RSHFT
+  &kp UPPER  &kp LCTRL               &kp LALT              &kp SPACE           &tog SYM         &tog UPPER     &kp UPPER     
             >;
         };
     };
