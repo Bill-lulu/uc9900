@@ -129,23 +129,6 @@ RC(6,0)  RC(6,1) RC(6,2)                 RC(6,5)                 RC(6,8)  RC(6,9
 	pinctrl-names = "default", "sleep";
 };
 
-&pinctrl {
-    i2c0_default: i2c0_default {
-		group1 {
-			psels = <NRF_PSEL(TWIM_SDA, 0, 22)>,
-				<NRF_PSEL(TWIM_SCL, 1, 00)>;
-			bias-pull-up;
-		};
-	};
-	i2c0_sleep: i2c0_sleep {
-		group1 {
-			psels = <NRF_PSEL(TWIM_SDA, 0, 22)>,
-				<NRF_PSEL(TWIM_SCL, 1, 00)>;
-			low-power-enable;
-			bias-pull-up;
-		};
-	};
-};
 
 &adc {
     status = "okay";
