@@ -80,7 +80,7 @@ RC(6,0)  RC(6,1) RC(6,2)                 RC(6,5)                 RC(6,8)  RC(6,9
         col-gpios
             = <&gpio1 13  GPIO_ACTIVE_HIGH>
             , <&gpio0 28  GPIO_ACTIVE_HIGH>
-            , <&gpio0 3  GPIO_ACTIVE_HIGH>
+            , <&gpio0 25  GPIO_ACTIVE_HIGH>
             , <&gpio1 10 GPIO_ACTIVE_HIGH>
             , <&gpio1 11 GPIO_ACTIVE_HIGH>
             , <&gpio0 26 GPIO_ACTIVE_HIGH>
