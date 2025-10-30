@@ -63,7 +63,7 @@
         sym_layer {
 
             bindings = <
-&kp  UP     &kp RIGHT      &mkp LCLK     &kp LEFT   &kp RIGHT  &mkp RCLK  &kp X      &kp Y      &kp B     &kp A
+&kp  UP     &kp RIGHT      &mkp LCLK     &kp LEFT   &kp RIGHT  &mkp RCLK  &mkp LCLK  &kp X      &kp Y      &kp B     &kp A
 &kp K_LOCK  &kp C_AC_PRINT &mkp C_PAUSE  &kp K_MUTE &none   &none   &none   &kp F11    &kp F12   &none                                                                                   
 &none    &kp F1         &kp F2        &kp F3     &kp F4     &kp F5     &kp F6     &kp F7     &kp F8    &kp F9  &kp F10 &kp DEL
 &none    &kp Q          &kp W         &kp E      &kp R      &kp T      &kp Y      &kp U      &kp I     &kp O   &kp P
