@@ -58,7 +58,7 @@
 &kp TAB     &kp Q         &kp W      &kp E    &kp R      &kp T      &kp Y      &kp U      &kp I     &kp O   &kp P
 &kp SQT     &kp A         &kp S      &kp D    &kp F      &kp G      &kp H      &kp J      &kp K     &kp L   &kp SEMICOLON &kp ENTER        
 &kp LSHFT   &kp Z         &kp X      &kp C    &kp V      &kp B      &kp N      &kp M      &kp COMMA &kp DOT &kp RSHFT
-  &mo SYM   &kp LCTRL               &kp LALT              &kp SPACE           &kp RALT         &kp RCTRL     &mo FUNCTION       
+  &mo SYM   &kp LCTRL               &kp LALT              &kp SPACE           &kp RALT         &kp RCTRL     &mo UPPER        
             >;
         };
 
@@ -73,13 +73,13 @@
 &kp CAPSLOCK    &kp Q          &kp W         &kp E      &kp R      &kp T      &kp Y      &kp PAGE_UP      &kp INSERT     &kp O   &kp P
 &none    &kp A          &kp S         &kp D      &kp F      &kp G      &kp HOME      &kp END      &kp PAGE_DOWN     &kp L   &none &none         
 &none    &kp Z          &kp X         &kp C      &kp V      &kp B      &kp N      &kp M      &kp C_BRI_DN &kp C_BRI_UP &kp RSHFT
-  &none  &kp LCTRL               &kp LGUI             &bl BL_TOG           &mo SYM         &mo SYM     &kp UPPER           
+  &none  &kp LCTRL               &kp LGUI             &bl BL_TOG           &mo SYM         &mo SYM     &mo UPPER           
 
             >;
         };
 
 
-        function_layer {
+        upper_layer {
 
             bindings = <
         &kp LEFT                      &mkp LCLK         &mkp RCLK      &kp Y   &kp X 
@@ -89,7 +89,7 @@
 &kp CAPSLOCK    &kp Q          &kp W         &kp E      &kp R      &kp T      &kp Y      &kp PAGE_UP      &kp INSERT     &kp O   &kp P
 &none    &kp A          &kp S         &kp D      &kp F      &kp G      &kp HOME      &kp END      &kp PAGE_DOWN     &kp L   &none &none         
 &none    &kp Z          &kp X         &kp C      &kp V      &kp B      &kp N      &kp M      &kp C_BRI_DN &kp C_BRI_UP &kp RSHFT
-  &none  &kp LCTRL               &kp LALT             &bl BL_TOG           &mo SYM         &mo SYM     &kp UPPER           
+  &none  &kp LCTRL               &kp LALT             &bl BL_TOG           &mo SYM         &none     &none           
 
             >;
         };
