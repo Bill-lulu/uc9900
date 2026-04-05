@@ -14,7 +14,7 @@
 
 #define SYM 1
 #define UPPER 2
-#define FUNCTION 3
+
  
 
 
