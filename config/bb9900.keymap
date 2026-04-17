@@ -89,7 +89,7 @@
 &kp CAPSLOCK    &kp Q          &kp W         &kp E      &kp R      &kp T      &kp Y      &kp PAGE_UP      &kp INSERT     &kp O   &kp P
 &none    &kp A          &kp S         &kp D      &kp F      &kp G      &kp HOME      &kp END      &kp PAGE_DOWN     &kp L   &none &none         
 &none    &kp Z          &kp X         &kp C      &kp V      &kp B      &kp N      &kp M      &kp C_BRI_DN &kp C_BRI_UP &kp RSHFT
-  &none  &kp LCTRL               &kp LALT             &bl BL_TOG           &mo SYM         &none     &none           
+  &&sys_reset  &kp LCTRL               &kp LALT             &bl BL_TOG           &mo SYM         &none     &none           
 
             >;
         };
