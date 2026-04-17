@@ -1,4 +1,5 @@
-# BB9900 wireless Keyboard: zmk-config
+# uconsole BB9900 wireless/usb Keyboard: zmk-config
+# uconsole BB9900 wireless/usb Keyboard: zmk-config
 
 Hey 👋 welcome. Use this repo to generate your own ZMK keymap for the BB9900 BLE keyboard.  
 [Keycode that you can use in ZMK firmware](https://zmk.dev/docs/codes)  
