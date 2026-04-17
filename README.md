@@ -11,11 +11,11 @@ Part ONE--USB
 
 1.when connect uconsole via usb,ble dont work!
 
-Part TWO--ble
+Part TWO--BLE
 
 1.RFN+1 2 3 is three different equipment ,RFN+ESC is Clean BLE(when you wanna connect new equipment and clean you ble info)  
 
-2.RFN+ (\|) is bootloader
+2.RFN+ (\\|) is bootloader
 
 3.RFN+LFN is soft-reset
 
