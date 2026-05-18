@@ -3,7 +3,8 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
+#include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/zmk/indicators.h>
 
 #include <nordic/nrf52840_qiaa.dtsi>
 
@@ -96,6 +97,20 @@ RC(6,0)  RC(6,1) RC(6,2)                 RC(6,5)                 RC(6,7)  RC(6,8
         compatible = "gpio-leds";
         blue_led: led_0 {
             gpios = <&gpio0 10 GPIO_ACTIVE_HIGH>;
+        };
+        compatible = "gpio-leds";
+        caps_lock_led: caps_lock_led {
+            /* nRF52840 GPIO0, pin 8, 高电平点亮 */
+            gpios = <&&gpio1 6 GPIO_ACTIVE_HIGH>;
+            label = "Caps Lock LED";
+        };
+    };
+	indicators {
+        compatible = "zmk,indicator-leds";
+
+        caps_lock_indicator: caps_lock {
+            indicator = <HID_INDICATOR_CAPS_LOCK>;
+            leds = <&caps_lock_led>;
         };
     };
 
